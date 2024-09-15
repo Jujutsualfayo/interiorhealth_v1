@@ -5,7 +5,7 @@ padding:0px;
 box-sizing: border-box;
 font-family: "Roboto", sans-serif;
 }
-section{
+body section{
 min-height: 100vh;
 background-image: url("../image/pix.jpg");
 background-repeat: no-repeat;
