@@ -64,7 +64,7 @@ margin-bottom: 25px;
 }
 .article p{
     font-size: 18px;
-    color: #f70800;
+    color: #037e1e;
     line-height: 1.5;
     margin-bottom: 50px;
 }
@@ -77,7 +77,7 @@ margin-bottom: 25px;
     background-color: #075743;
 }
 .article .btn:hover{
-    background-color: #f70800;
+    background-color: #b3ff03;
     transition: 0.5s ease;
 }
 
