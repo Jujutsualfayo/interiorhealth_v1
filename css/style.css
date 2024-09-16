@@ -8,7 +8,7 @@ font-family: "Roboto", sans-serif;
 body section{
 min-height: 100vh;
 background-image: linear-gradient(rgba(0,0,0,0.60),rgba(0,0,0,0.60)), url("../image/pix.jpg");
-background-color: #075743;
+background-color: #04ac2e;
 background-repeat: no-repeat;
 background-size: cover;
 }
@@ -24,7 +24,7 @@ nav h1{
     line-height: 80px;
     font-size: 35px;
     font-size: inline;
-    color: #0b6839;
+    color: #049e2a;
 }
 nav ul{
     float: right;
@@ -64,7 +64,7 @@ margin-bottom: 25px;
 }
 .article p{
     font-size: 18px;
-    color: #025815;
+    color: #84bb04;
     line-height: 1.5;
     margin-bottom: 50px;
 }
