@@ -68,6 +68,14 @@ margin-bottom: 25px;
     line-height: 1.5;
     margin-bottom: 50px;
 }
+.article .btn{
+    color: #fff;
+    padding: 12px 25px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #075743;
+}
 
 
 
