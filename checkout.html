@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interior Health - Checkout</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Interior Health</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="checkout">
+        <h2>Checkout</h2>
+        <div class="cart-items">
+            <h3>Your Cart</h3>
+            <ul id="cart-list"></ul>
+            <p>Total: $<span id="cart-total">0.00</span></p>
+        </div>
+        <button onclick="checkout()">Proceed to Payment</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Interior Health. All Rights Reserved.</p>
+    </footer>
+
+    <script src="/static/js/app.js"></script>
+</body>
+</html>
+
