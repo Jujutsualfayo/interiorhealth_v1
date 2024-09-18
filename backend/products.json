@@ -1,0 +1,6 @@
+[
+    { "id": 1, "name": "Aspirin", "price": 5.00 },
+    { "id": 2, "name": "Paracetamol", "price": 3.00 },
+    { "id": 3, "name": "Ibuprofen", "price": 8.00 }
+]
+
