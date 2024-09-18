@@ -138,6 +138,43 @@ margin-bottom: 25px;
 .team-members a:hover {
     text-decoration: solid;
 }
+#products, #checkout {
+    background-color: #09db37;
+    padding: 60px 20px;
+    text-align: left;
+}
 
+#products h2, #checkout h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #fff;
+}
 
+#products #product-list, #checkout #cart-list {
+    padding: 20px;
+    border: 1px solid #155a04;
+    border-radius: 5px;
+    background-color: #94d867;
+}
 
+#checkout #total {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .article {
+        padding: 50px 0;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+}

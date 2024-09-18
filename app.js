@@ -1,37 +1,62 @@
-// Starting java to add cart
+// Smooth scrolling for user navigation
+document.querySelectorAll('nav ul li a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+// Product list and checkout system
+
+let products = [
+    { id: 1, name: "Aspirin", price: 5.00 },
+    { id: 2, name: "Paracetamol", price: 3.00 },
+    { id: 3, name: "Ibuprofen", price: 8.00 }
+];
+
 let cart = [];
 
-// Function to add items to the cart
-function addToCart(productName, productPrice) {
-    cart.push({ name: productName, price: productPrice });
-    alert(`${productName} added to cart`);
-    updateCartTotal();
-}
-
-// Function to update the total amount in the cart
-function updateCartTotal() {
-    let total = 0;
-    let cartList = document.getElementById("cart-list");
-    cartList.innerHTML = "";  // Clear the list
-
-    cart.forEach(item => {
-        let listItem = document.createElement("li");
-        listItem.textContent = `${item.name} - $${item.price}`;
-        cartList.appendChild(listItem);
-        total += item.price;
-    });
-
-    document.getElementById("cart-total").textContent = total.toFixed(2);
-}
-
-// Function to proceed to checkout
-function checkout() {
-    if (cart.length > 0) {
-        alert("Thank you for your purchase! Proceeding to payment...");
-        cart = [];  // Clear the cart after purchase
-        updateCartTotal();
-    } else {
-        alert("Your cart is empty!");
+function addToCart(productId) {
+    const product = products.find(p => p.id === productId);
+    if (product) {
+        cart.push(product);
+        displayCart();
     }
 }
 
+function displayProducts() {
+    const productContainer = document.getElementById('product-list');
+    products.forEach(product => {
+        const productDiv = document.createElement('div');
+        productDiv.classList.add('product');
+        productDiv.innerHTML = `
+            <h3>${product.name}</h3>
+            <p>Price: $${product.price.toFixed(2)}</p>
+            <button onclick="addToCart(${product.id})">Add to Cart</button>
+        `;
+        productContainer.appendChild(productDiv);
+    });
+}
+
+function displayCart() {
+    const cartContainer = document.getElementById('cart-list');
+    cartContainer.innerHTML = '';
+    let total = 0;
+    cart.forEach(item => {
+        total += item.price;
+        const cartItem = document.createElement('div');
+        cartItem.classList.add('cart-item');
+        cartItem.innerHTML = `
+            <p>${item.name} - $${item.price.toFixed(2)}</p>
+        `;
+        cartContainer.appendChild(cartItem);
+    });
+    document.getElementById('total').textContent = `Total: $${total.toFixed(2)}`;
+}
+
+// Initialize products on page load
+document.addEventListener('DOMContentLoaded', () => {
+    displayProducts();
+});
