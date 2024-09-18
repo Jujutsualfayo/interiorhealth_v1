@@ -138,6 +138,12 @@ margin-bottom: 25px;
 .team-members a:hover {
     text-decoration: solid;
 }
-
-
+.hero {
+    text-align: center;
+    padding: 50px;
+    background-color: #0bd136;
+}
+.checkout {
+    padding: 20px;
+}
 
