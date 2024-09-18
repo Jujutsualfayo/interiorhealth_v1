@@ -16,3 +16,38 @@ We come from a Country that is well and trully marred with a poor health care sy
 
 Why Interior Health?
 Our frontend (HTML, CSS, and JS) interacts with the backend (Flask). The pharma products are served from a JSON file, and the cart functionality is implemented by communicating with the backend via JavaScript fetch API.
+
+TECH-STACK
+FRONT-END(CLIENT SIDE)             BACKEND SIDE
+Node.JS                        } restful api{   postgreSQL
+CSS                                 
+HTML
+
+DEPENDENCIES
+Flask==2.0.1
+Werkzeug==2.0.3
+
+DEPLOYMENT.
+Node.js
+parcel
+
+AUTH/PASSWD
+User enters email (for login) or both email + username (for signup). Front-end initially sends email/username to back-end.
+
+If logging in, and an account does not exist with the given email, back-end returns a redirect code, and user is directed to sign-up.
+Otherwise, back-end generates and returns a challenge token associated with the email.
+Front-end temporarily stores challenge token in localStorage, then uses the Auth0 API to send a login email to the user. The login email includes a random code that user must enter to verify account.
+
+Upon entering the verfication code, the user is redirected to the home page of IdeaDog. The redirect occurs on a URL hashed by Auth0 which the front-end parses to retrieve the user's Auth0 profile.
+
+Front-end pulls up challenge token from localStorage and returns it to the back-end with the verified email. Back-end generates and returns a bearer token in the form of a cookie.
+
+After being returned to the back-end, the challenge token is cleared from localStorage.
+The bearer token has been set and the user can fully acccess ACCOUNT
+
+authors
+Benjamin Al fayo <Jujutsualfayo>
+Oscar Obado <posei-d>
+
+Licence
+This project is licensed under the MIT License - see the LICENSE on the repo.
