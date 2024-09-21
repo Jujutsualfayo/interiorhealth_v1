@@ -7,7 +7,7 @@ Linkdln Authors: benjamin_alfayo1
                :Oscar_Obado
 
                INTERIOR HEALTH
-               ![alt text](<INTERIOR HEALTH LLC-1.png>)
+               
 
              providing affordable health care to the most vulnerable people in interior Kenya
 Description
