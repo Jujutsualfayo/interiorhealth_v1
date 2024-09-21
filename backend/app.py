@@ -1,16 +1,17 @@
-ifrom flask import Flask, render_template, jsonify, request
+from flask import Flask, render_template, jsonify, request
 
 app = Flask(__name__)
 
-# Load products from JSON file
-import json
-with open('products.json') as f:
-    products = json.load(f)
 
 # Route for the home page
 @app.route('/')
 def landing_page():
     return render_template('index.html')
+
+# Load products from JSON file
+import json
+with open('products.json') as f:
+    products = json.load(f)
 
 # Route to get the list of products
 @app.route('/products')
