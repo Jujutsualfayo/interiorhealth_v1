@@ -15,11 +15,11 @@
             <nav>
                 <h1>Interior Health Services</h1>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="donate.html">Donate</a></li>
-                    <li><a href="contact.html">Contacts</a></li>
-                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="{{ url_for('landing_page') }}">Home</a></li>
+                    <li><a href="{{ url_for('about_page') }}">About Us</a></li>
+                    <li><a href="{{ url_for('donate_page') }}">Donate</a></li>
+                    <li><a href="{{ url_for('contact_page') }}">Contacts</a></li>
+                    <li><a href="{{ url_for('projects_page') }}">Projects</a></li>
                 </ul>
             </nav>
             <div class="article">

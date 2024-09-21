@@ -8,6 +8,23 @@ app = Flask(__name__)
 def landing_page():
     return render_template('index.html')
 
+@app.route('/about')
+def about_page():
+    return render_template('about.html')
+
+@app.route('/donate')
+def donate_page():
+    return render_template('donate.html')
+
+@app.route('/contact')
+def contact_page():
+    return render_template('contact.html')
+
+@app.route('/projects')
+def projects_page():
+    return render_template('projects.html')
+
+
 # Load products from JSON file
 import json
 with open('products.json') as f:
