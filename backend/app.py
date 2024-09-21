@@ -1,4 +1,4 @@
-from flask import Flask, render_template, jsonify, request
+ifrom flask import Flask, render_template, jsonify, request
 
 app = Flask(__name__)
 
@@ -9,7 +9,7 @@ with open('products.json') as f:
 
 # Route for the home page
 @app.route('/')
-def index():
+def landing_page():
     return render_template('index.html')
 
 # Route to get the list of products
