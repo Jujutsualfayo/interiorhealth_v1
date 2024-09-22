@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn more about the Interior Health project, our mission, and our team.">
+    <title>About Us - Interior Health Services</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <nav>
+                <h1>Interior Health Services</h1>
+                <ul>
+                    <li><a href="{{ url_for('landing_page') }}">Home</a></li>
+                    <li><a href="{{ url_for('about_page') }}">About Us</a></li>
+                    <li><a href="{{ url_for('donate_page') }}">Donate</a></li>
+                    <li><a href="{{ url_for('contact_page') }}">Contact Us</a></li>
+                    <li><a href="{{ url_for('projects_page') }}">Projects</a></li>
+                </ul>
+            </nav>
+            <div class="article">
+                <h2>About Interior Health</h2>
+                <p>At Interior Health Services, our mission is to deliver quality healthcare solutions to individuals living in remote regions who face significant challenges in accessing proper medical care. We believe that everyone deserves access to basic healthcare, no matter where they live.</p>
+                <h3>Our Vision</h3>
+                <p>Our vision is to create a world where distance and geographic isolation are no longer barriers to essential healthcare services. Through innovative approaches and accessible products, we strive to improve health outcomes for marginalized communities.</p>
+                <h3>Our Team</h3>
+                <ul class="team-members">
+                    <li><strong>Benjamin Alfayo Otieno</strong> - Full-Stack Developer<br>
+                        <a href="https://linkedin.com/in/benjamin_alfayo1">LinkedIn</a> |
+                        <a href="https://github.com/jujutsualfayo">GitHub</a> |
+                        <a href="https://twitter.com/benjaminalpha">Twitter</a>
+                    </li>
+                    <li><strong>Oscar Obado Ochieng</strong> - Full-Stack Developer<br>
+                        <a href="https://linkedin.com/in/oscarobado1">LinkedIn</a> |
+                        <a href="https://github.com/posei-d">GitHub</a> |
+                        <a href="https://twitter.com/obado_oscar">Twitter</a>
+                    </li>
+                </ul>
+                <p>This project was a portfolio project for <a href="https://www.holbertonschool.com">Holberton School</a>, demonstrating our ability to develop full-stack web applications. It started in August 2024 and was completed in October 2024.</p>
+                <p>Check out the full project on <a href="https://github.com/interiorhealth_v1">GitHub</a>.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+

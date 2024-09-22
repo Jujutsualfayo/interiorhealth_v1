@@ -6,8 +6,7 @@
     <meta name="description" content="Interior Health services providing inclusive health care for remote individuals.">
     <title>Interior Health Services - Landing Page</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
-<script src="{{ url_for('static', filename='app.js') }}"></script>
-
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
 </head>
 <body>
     <section>
@@ -16,63 +15,25 @@
                 <h1>Interior Health Services</h1>
                 <ul>
                     <li><a href="{{ url_for('landing_page') }}">Home</a></li>
-                    <li><a href="{{ url_for('about_page') }}">About Us</a></li>
-                    <li><a href="{{ url_for('donate_page') }}">Donate</a></li>
-                    <li><a href="{{ url_for('contact_page') }}">Contacts</a></li>
-                    <li><a href="{{ url_for('projects_page') }}">Projects</a></li>
                 </ul>
             </nav>
             <div class="article">
-                <h2>About Interior Health</h2>
+                <h2>Welcome to Interior Health</h2>
                 <p>We at Interior Health services aim to provide an inclusive health care package designed for individuals living in the most remote areas of the Earth. <br>
                 Safeguarding life and upholding dignity is our goal.</p>
-                <a href="download.pdf" class="btn">Download Now</a>
+                <a href="download.pdf" class="btn">Download Brochure</a>
             </div>
         </div>
     </section>
-<section id="features">
-</section>
-<section id="about">
-    <div class="container">
-        <h2>About the Interior Health Project</h2>
-        <p>This project was a brain child of dedicated programmers who saw the need to solve a key aspect of society, one which required immediate intervention. This is also a Portfolio Project for <a href="https://www.holbertonschool.com">Holberton School</a>, showcasing our ability to create full-stack web applications.</p>
-        <p>The project began in August 2024 and was completed by October 2024. Throughout this time, we encountered numerous challenges, but the process helped us grow as developers and problem solvers.</p>
-        <h3>Meet Our Team</h3>
-        <ul class="team-members">
-            <li>
-                <strong>Benjamin Alfayo Otieno</strong> - Full-Stack Developer <br>
-                <a href="https://linkedin.com/in/benjamin_alfayo1">LinkedIn</a> | 
-                <a href="https://github.com/jujutsualfayo">GitHub</a> | 
-                <a href="https://twitter.com/benjaminalpha">Twitter</a>
-            </li>
-            <li>
-                <strong>Oscar Obado Ochieng</strong> - Full-stack  Developer <br>
-                <a href="https://linkedin.com/in/oscarobado1">LinkedIn</a> | 
-                <a href="https://github.com/posei-d">GitHub</a> | 
-                <a href="https://twitter.com/obado oscar">Twitter</a>
-            </li>
-        </ul>
-        <p>Check out the full project on <a href="https://github.com/interiorhealth_v1">GitHub</a>.</p>
-    </div>
-</section>
-<section id="products">
-    <div class="container">
-        <h2>Available Products</h2>
-        <div id="product-list"></div>
-    </div>
-</section>
 
-<section id="checkout">
-    <div class="container">
-        <h2>Your Cart</h2>
-        <div id="cart-list"></div>
-        <p id="total">Total: $0.00</p>
-    </div>
-</section>
+    <section id="features">
+        <div class="container">
+            <h2>Our Services</h2>
+            <p>At Interior Health, we provide affordable and accessible health care products tailored for rural and remote communities. Stay tuned for more information about our services and products!</p>
+        </div>
+    </section>
 
-<script src="app.js"></script>
-
-
+    <script src="app.js"></script>
 </body>
-</html>    
+</html>
 

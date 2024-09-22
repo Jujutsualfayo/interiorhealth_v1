@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the projects by Interior Health Services aimed at improving healthcare in remote areas.">
+    <title>Our Projects - Interior Health Services</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <nav>
+                <h1>Interior Health Services</h1>
+                <ul>
+                    <li><a href="{{ url_for('landing_page') }}">Home</a></li>
+                    <li><a href="{{ url_for('about_page') }}">About Us</a></li>
+                    <li><a href="{{ url_for('donate_page') }}">Donate</a></li>
+                    <li><a href="{{ url_for('contact_page') }}">Contact Us</a></li>
+                    <li><a href="{{ url_for('projects_page') }}">Projects</a></li>
+                </ul>
+            </nav>
+            <div class="article">
+                <h2>Our Projects</h2>
+                <p>At Interior Health Services, we are dedicated to improving healthcare access in remote areas. Here are some of our key projects:</p>
+
+                <h3>Project 1: Mobile Health Clinics</h3>
+                <p>We provide mobile health clinics that travel to remote communities, offering essential medical services and consultations.</p>
+
+                <h3>Project 2: Health Education Workshops</h3>
+                <p>Our workshops focus on educating communities about health practices, nutrition, and preventive care to empower individuals to take charge of their health.</p>
+
+                <h3>Project 3: Telemedicine Services</h3>
+                <p>Utilizing technology, we offer telemedicine services to connect patients with healthcare professionals without the need for travel.</p>
+
+                <h3>Project 4: Community Health Initiatives</h3>
+                <p>We collaborate with local organizations to launch health initiatives that address specific needs within communities.</p>
+
+                <h3>Get Involved</h3>
+                <p>If you would like to learn more about our projects or get involved, please <a href="{{ url_for('contact_page') }}">contact us</a>.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
