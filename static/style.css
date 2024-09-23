@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); 
+
+  
+
+* { 
+
+    margin: 0; 
+
+    padding: 0; 
+
+    box-sizing: border-box; 
+
+    font-family: "Roboto", sans-serif; 
+
+} 
+
+  
+
+body section { 
+
+    min-height: 100vh; 
+
+    background-image: linear-gradient(rgba(0,0,0,0.60), rgba(0,0,0,0.60)), url("../image/pix.jpg"); 
+
+    background-color: #04ac2e; 
+
+    background-repeat: no-repeat; 
+
+    background-size: cover; 
+
+} 
+
+  
+
+.container { 
+
+    width: 85%; 
+
+    margin: auto; 
+
+} 
+
+  
+
+nav { 
+
+    height: 80px; 
+
+} 
+
+  
+
+nav h1 { 
+
+    float: left; 
+
+    line-height: 80px; 
+
+    font-size: 35px; 
+
+    color: #049e2a; 
+
+} 
+
+  
+
+nav ul { 
+
+    float: right; 
+
+    line-height: 80px; 
+
+} 
+
+  
+
+nav ul li { 
+
+    display: inline-block; 
+
+    list-style: none; 
+
+    padding: 0 5px; 
+
+} 
+
+  
+
+nav ul li a { 
+
+    color: #fff; 
+
+    text-decoration: none; 
+
+    text-transform: uppercase; 
+
+    border-radius: 5px; 
+
+    padding: 7px 8px; 
+
+} 
+
+  
+
+nav ul li a:hover { 
+
+    background-color: rgb(1, 128, 39); 
+
+    transition: 0.5s ease; 
+
+} 
+
+  
+
+nav ul li .active { 
+
+    background-color: rgb(2, 107, 25); 
+
+} 
+
+  
+
+.article { 
+
+    width: 50%; 
+
+    margin: auto; 
+
+    text-align: center; 
+
+    transform: translateY(25vh); 
+
+} 
+
+  
+
+.article h1 { 
+
+    font-size: 36px; 
+
+    color: #f70800; 
+
+    letter-spacing: 1.5px; 
+
+    font-weight: 800; 
+
+    margin-bottom: 25px; 
+
+} 
+
+  
+
+.article h2 { 
+
+    font-size: 25px; 
+
+    color: #fff; 
+
+} 
+
+  
+
+.article p { 
+
+    font-size: 18px; 
+
+    color: #04bd0e; 
+
+    line-height: 1.5; 
+
+    margin-bottom: 50px; 
+
+} 
+
+  
+
+.article .btn { 
+
+    color: #fff; 
+
+    padding: 12px 25px; 
+
+    letter-spacing: 1.5px; 
+
+    text-transform: uppercase; 
+
+    text-decoration: none; 
+
+    background-color: #075743; 
+
+} 
+
+  
+
+.article .btn:hover { 
+
+    background-color: #b3ff03; 
+
+    transition: 0.5s ease; 
+
+} 
+
+  
+
+#features { 
+
+    background-color: rgb(2, 107, 25); 
+
+    padding: 60px 20px; 
+
+    text-align: center; 
+
+} 
+
+  
+
+.features-grid { 
+
+    display: flex; 
+
+    flex-wrap: wrap; 
+
+    justify-content: space-around; 
+
+} 
+
+  
+
+.feature { 
+
+    background-color: #02f34a; 
+
+    padding: 20px; 
+
+    margin: 20px; 
+
+    flex: 1 1 30%; 
+
+    box-shadow: 0 2px 10px rgba(6, 163, 103, 0.1); 
+
+} 
+
+  
+
+.feature h3 { 
+
+    font-size: 25px; 
+
+    margin-bottom: 10px; 
+
+} 
+
+  
+
+.feature p { 
+
+    font-size: 20px; 
+
+    color: #09d113; 
+
+} 
+
+  
+
+#about { 
+
+    background-color: #fff; 
+
+    padding: 60px 20px; 
+
+    text-align: center; 
+
+    color: #333; /* Changed for readability */ 
+
+} 
+
+  
+
+#about p { 
+
+    font-size: 20px; 
+
+    line-height: 1.6; 
+
+    max-width: 800px; 
+
+    margin: 20px auto; 
+
+} 
+
+  
+
+.team-members { 
+
+    list-style-type: none; 
+
+    padding: 0; 
+
+} 
+
+  
+
+.team-members li { 
+
+    margin: 10px 0; 
+
+    font-size: 20px; /* Adjusted for consistency */ 
+
+} 
+
+  
+
+.team-members a { 
+
+    margin: 0 5px; 
+
+    font-size: 20px; /* Adjusted for consistency */ 
+
+    color: #03dd65; 
+
+    text-decoration: none; 
+
+} 
+
+  
+
+.team-members a:hover { 
+
+    text-decoration: underline; /* Changed for better UX */ 
+
+} 
+
+  
+
+#products, 
+
+#checkout { 
+
+    background-color: #09db37; 
+
+    padding: 60px 20px; 
+
+    text-align: left; 
+
+} 
+
+  
+
+#products h2, 
+
+#checkout h2 { 
+
+    font-size: 28px; 
+
+    margin-bottom: 20px; 
+
+    color: #fff; 
+
+} 
+
+  
+
+#products #product-list, 
+
+#checkout #cart-list { 
+
+    padding: 20px; 
+
+    border: 1px solid #155a04; 
+
+    border-radius: 5px; 
+
+    background-color: #94d867; 
+
+} 
+
+  
+
+#checkout #total { 
+
+    font-size: 18px; 
+
+    font-weight: bold; 
+
+    margin-top: 20px; 
+
+} 
+
+  
+
+@media (max-width: 768px) { 
+
+    nav ul li { 
+
+        display: block; 
+
+        margin: 10px 0; 
+
+    } 
+
+  
+
+    .article { 
+
+        padding: 50px 0; 
+
+    } 
+
+  
+
+    .container { 
+
+        width: 100%; 
+
+        padding: 0 20px; 
+
+    } 
+
+} 

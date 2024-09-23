@@ -1,0 +1,105 @@
+<!DOCTYPE html> 
+
+<html lang="en"> 
+
+<head> 
+
+    <meta charset="utf-8"> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <meta name="description" content="Contact Interior Health Services for inquiries, support, or collaboration."> 
+
+    <title>Contact Us - Interior Health Services</title> 
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}"> 
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script> 
+
+</head> 
+
+<body> 
+
+    <section> 
+
+        <div class="container"> 
+
+            <nav> 
+
+                <h1>Interior Health Services</h1> 
+
+                <ul> 
+
+                    <li><a href="{{ url_for('landing_page') }}">Home</a></li> 
+
+                    <li><a href="{{ url_for('about_page') }}">About Us</a></li> 
+
+                    <li><a href="{{ url_for('donate_page') }}">Donate</a></li> 
+
+                    <li><a href="{{ url_for('contact_page') }}">Contact Us</a></li> 
+
+                    <li><a href="{{ url_for('projects_page') }}">Projects</a></li> 
+
+                </ul> 
+
+            </nav> 
+
+            <div class="article"> 
+
+                <h2>Contact Us</h2> 
+
+                <p>If you have any questions, suggestions, or would like to collaborate with us, please reach out using the form below or through our contact details.</p> 
+
+  
+
+                <h3>Contact Form</h3> 
+
+                <form action="/submit-contact" method="POST"> 
+
+                    <label for="name">Name:</label> 
+
+                    <input type="text" id="name" name="name" required> 
+
+  
+
+                    <label for="email">Email:</label> 
+
+                    <input type="email" id="email" name="email" required> 
+
+  
+
+                    <label for="message">Message:</label> 
+
+                    <textarea id="message" name="message" rows="4" required></textarea> 
+
+  
+
+                    <button type="submit">Send Message</button> 
+
+                </form> 
+
+  
+
+                <h3>Other Contact Methods</h3> 
+
+                <p>You can also reach us at:</p> 
+
+                <ul> 
+
+                    <li>Email: <a href="mailto:info@interiorhealth.org">info@interiorhealth.org</a></li> 
+
+                    <li>Phone: +254 769 75394</li> 
+
+                    <li>Address: 00100 James Gichuru road,Nairobi</li> 
+
+                </ul> 
+
+            </div> 
+
+        </div> 
+
+    </section> 
+
+</body> 
+
+</html> 
